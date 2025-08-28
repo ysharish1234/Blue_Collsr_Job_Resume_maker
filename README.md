@@ -1,3 +1,7 @@
+
+![WhatsApp Image 2025-08-28 at 17 03 18_1d34f831](https://github.com/user-attachments/assets/08e5b46a-448c-45d9-a761-d14c51dcde11)
+
+
 # Welcome to your Lovable project
 
 ## Project info
