@@ -1,5 +1,24 @@
+## Screenshots
 
-![WhatsApp Image 2025-08-28 at 17 03 18_1d34f831](https://github.com/user-attachments/assets/08e5b46a-448c-45d9-a761-d14c51dcde11)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/08e5b46a-448c-45d9-a761-d14c51dcde11" width="22%" />
+  <img src="https://github.com/user-attachments/assets/fb6d9661-594f-4f2a-935b-e4ac5006ecb7" width="22%" />
+  <img src="https://github.com/user-attachments/assets/3a9ad833-2005-4693-bdc5-f609baea1e0f" width="22%" />
+  <img src="https://github.com/user-attachments/assets/92b709fe-a918-4ca7-bc5e-e255856118fb" width="22%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ec0cfbc2-440e-4490-87b7-3617b7245740" width="30%" />
+  <img src="https://github.com/user-attachments/assets/83794d5e-8d5e-4aa3-82ce-dbae0b5eaf35" width="30%" />
+  <img src="https://github.com/user-attachments/assets/3ebcf1d1-5a31-473f-8c25-f7f117466806" width="30%" />
+</p>
+
+
+
+
+
+
+
 
 
 # Welcome to your Lovable project
