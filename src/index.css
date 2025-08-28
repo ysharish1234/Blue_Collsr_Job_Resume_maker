@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Beautiful AI Resume Maker Design System 
+All colors MUST be HSL. Blue gradient theme for professional resume building.
+*/
+
+@layer base {
+  :root {
+    /* Background gradients for the resume maker */
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+
+    /* Glass morphism cards */
+    --card: 222 84% 5%;
+    --card-foreground: 210 40% 98%;
+    --card-glass: 0 0% 100% / 0.1;
+    --card-border: 0 0% 100% / 0.2;
+
+    --popover: 222 84% 5%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Brand colors for AI Resume theme */
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 224 76% 48%;
+
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 18%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Status colors */
+    --success: 142 71% 45%;
+    --success-foreground: 210 40% 98%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 84% 5%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Interactive elements */
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --input-glass: 0 0% 100% / 0.1;
+    --ring: 217 91% 60%;
+
+    /* Beautiful gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(224, 76%, 48%));
+    --gradient-secondary: linear-gradient(135deg, hsl(142, 71%, 45%), hsl(217, 91%, 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(38, 92%, 50%), hsl(25, 95%, 53%));
+    --gradient-bg: linear-gradient(135deg, hsl(222, 84%, 5%), hsl(217, 91%, 15%), hsl(224, 76%, 20%));
+
+    /* Animations & effects */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-glass: 0 8px 32px hsla(217, 91%, 60%, 0.15);
+    --shadow-glow: 0 0 40px hsla(217, 91%, 60%, 0.3);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme maintains the same beautiful blue gradient theme */
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 84% 5%;
+    --card-foreground: 210 40% 98%;
+    --card-glass: 0 0% 100% / 0.1;
+    --card-border: 0 0% 100% / 0.2;
+
+    --popover: 222 84% 5%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 224 76% 48%;
+
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 18%;
+    --accent-foreground: 210 40% 98%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 210 40% 98%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 84% 5%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --input-glass: 0 0% 100% / 0.1;
+    --ring: 217 91% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground;
+    background: var(--gradient-bg);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-md border;
+    background: hsl(var(--card-glass));
+    border-color: hsl(var(--card-border));
+    box-shadow: var(--shadow-glass);
+  }
+  
+  .glass-input {
+    @apply backdrop-blur-md border focus:ring-2 focus:ring-primary focus:border-transparent;
+    background: hsl(var(--input-glass));
+    border-color: hsl(var(--card-border));
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .chat-bubble {
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  .pulse-ring {
+    animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+  
+  @keyframes pulse-ring {
+    0% { 
+      transform: scale(0.33); 
+    }
+    80%, 100% { 
+      opacity: 0; 
+    }
+  }
+  
+  .recording {
+    background: var(--gradient-accent);
+    animation: recordingPulse 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes recordingPulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+  }
+}
